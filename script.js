@@ -191,6 +191,7 @@ var setModel = function (model, entity) {
 
 function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
+    console.log(navigator.geolocation.getCurrentPosition());
 
     places.forEach((place) => {
         let latitude = place.location.lat;
