@@ -127,8 +127,10 @@ function staticLoadPlaces() {
 
 
 window.onload = () => {
-    const button = document.querySelector();
-    button.innerText = '﹖';
+    const buttons = document.querySelectorAll('button')
+    buttons.forEach(button => {
+        button.innerText='?'
+    })
 
     let places = staticLoadPlaces();
     renderPlaces(places);
@@ -201,7 +203,8 @@ function renderPlaces(places) {
 
         model.setAttribute('animation-mixer', '');
 
-        document.querySelector('#' + place.name).addEventListener('click', function () {
+        document.querySelector(`#${place.name}`).addEventListener('click', function () {
+            console.log(document.querySelector(`#${place.name}`));
             var entity = document.querySelector('[gps-entity-place]');
             modelIndex++;
             var newIndex = modelIndex % models.length;
