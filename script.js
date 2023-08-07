@@ -2,34 +2,47 @@
 //     let places = staticLoadPlaces();
 //     renderPlaces(places);
 // };
-
 function staticLoadPlaces() {
-   return [
-       
-       {
-           name: 'poke_one',
-           location: {
-               lat: 35.142465,
-               lng: 120.639377,
-           }
-       },
-    {
-        name: 'poke_two',
-        location: {
-            lat: 35.142618,
-            lng: -120.639039,
-        }
-    },
-    {
-        name: 'poke_three',
-        location: {
-            lat:35.142544,
-            lng: -120.638920,
-        }
-    },
-
-   ];
+    return [
+        
+        {
+            name: 'poke_one',
+            location: {
+                lat: 35.300137,
+                lng: -120.662544
+                ,
+            }
+        },
+    ]
 }
+// function staticLoadPlaces() {
+//    return [
+       
+//        {
+//            name: 'poke_one',
+//            location: {
+//                lat: 35.300137,
+//                lng: -120.662544
+//                ,
+//            }
+//        },
+//     {
+//         name: 'poke_two',
+//         location: {
+//             lat: 35.142618,
+//             lng: -120.639039,
+//         }
+//     },
+//     {
+//         name: 'poke_three',
+//         location: {
+//             lat:35.142544,
+//             lng: -120.638920,
+//         }
+//     },
+
+//    ];
+// }
 
 // function renderPlaces(places) {
 //    let scene = document.querySelector('a-scene');
