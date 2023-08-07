@@ -127,7 +127,7 @@ function staticLoadPlaces() {
 
 
 window.onload = () => {
-    const button = document.querySelector('button[data-action="change"]');
+    const button = document.querySelector();
     button.innerText = '﹖';
 
     let places = staticLoadPlaces();
@@ -195,7 +195,7 @@ function renderPlaces(places) {
         let longitude = place.location.lng;
 
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};id: ${place.name}`);
 
         setModel(models[modelIndex], model);
 
