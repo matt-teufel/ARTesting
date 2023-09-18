@@ -22,5 +22,6 @@ window.onload = () => {
             document.querySelector("a-scene").appendChild(entity);
         }
         testEntityAdded = true;
+        console.log("entity added");
     });
 };
