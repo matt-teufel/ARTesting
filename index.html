@@ -167,11 +167,13 @@
         function hasDomOverlay(session) {
             if (!session.domOverlayState) {
                 // DOM Overlay is not supported
+                console.log("not supported")
                 return false;
             }
 
             if (!session.domOverlayState.type) {
                 // DOM Overlay is not in use
+                console.log("not in use")
                 return false;
             }
 
