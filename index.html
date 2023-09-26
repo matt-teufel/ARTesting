@@ -208,7 +208,10 @@
 				const domOverlay = hasDomOverlay(scene.xrSession);
 				if (document.body.classList.contains("playing")) {
 					const pose = e.detail.pose;
+                    console.log("pose: ", pose);
+                    console.log("event: ", e);
 					ball.body.position.copy(pose.transform.position);
+                    console.log("transform ", pose.transform.position);
 					// ball.body.position.y += 0.2;
 					tempVector.set(0, 0 ,-5);
 					tempVector.applyQuaternion(pose.transform.orientation);
@@ -237,6 +240,7 @@
 			});
 
 			function readyToStartPlay(e) {
+                console.log("Pose detected, ready to play!");
 				e.preventDefault();
 				if (hoop.getAttribute("visible") === false) {
 					positionHoop();
