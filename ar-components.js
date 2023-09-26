@@ -12,7 +12,7 @@ AFRAME.registerComponent("hide-in-ar-mode", {
 		});
 		this.el.sceneEl.addEventListener("exit-vr", () => {
 			this.el.setAttribute("visible", true);
-        });
+		});
 	},
 });
 
@@ -205,7 +205,7 @@ AFRAME.registerComponent("ar-hit-test", {
 				this.el.object3D.quaternion.copy(pose.transform.orientation);
 			}
 		}
-},
+	},
 });
 
 AFRAME.registerPrimitive('a-hit-test', {
